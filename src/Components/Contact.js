@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {Container} from '../Utils/global.css'
+
 import linkedin from '../Assets/linkedIn(1).png'
 import github from '../Assets/github.png'
 
@@ -10,7 +12,7 @@ const Contact = () => {
 			<Corner>
 			<H2>Contact</H2>
 			</Corner>
-			<Container>
+			<Base>
 				<Row>
 					<Paragraph bold>Location</Paragraph>
 					<Paragraph>Portland, Oregon</Paragraph>
@@ -36,13 +38,13 @@ const Contact = () => {
 						</a>
 					</Grid>
 				</Row>
-			</Container>
+			</Base>
 		</Wrapper>
 	)
 }
 
-const Wrapper = styled.div`
-	height: 220px;
+const Wrapper = styled(Container)`
+  height: 220px;
 	background-color: #F0F0F0;
 `
 
@@ -56,7 +58,7 @@ const H2 = styled.h2`
 	margin: 0 0 0 10px;
 `
 
-const Container = styled.div`
+const Base = styled.div`
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: center;

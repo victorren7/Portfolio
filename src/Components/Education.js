@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {Container} from '../Utils/global.css'
+
 const Education = () => {
 	return (
 		<Wrapper>
@@ -29,8 +31,8 @@ const Education = () => {
 	)
 }
 
-const Wrapper = styled.div`
-	height: 500px;
+const Wrapper = styled(Container)`
+  height: 500px;
 	border-top: lightgray 2px solid;
 `
 

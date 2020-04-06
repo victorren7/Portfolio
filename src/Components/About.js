@@ -1,13 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {Container} from '../Utils/global.css'
+
 const About = () => {
   return (
 		<Wrapper>
 			<Corner>
 				<H2>Hello!</H2>
 			</Corner>
-			<Container>
+			<Base>
 				<Paragraph>
 					Hello! My name is Victor Renderos. 
 				</Paragraph>	
@@ -22,13 +24,13 @@ const About = () => {
 				</Paragraph>
 				
 				
-			</Container>
+			</Base>
 		</Wrapper>
 	)
 };
 
-const Wrapper = styled.div`
-	height: 400px;
+const Wrapper = styled(Container)`
+  height: 400px;
 `
 
 const Corner = styled.div`
@@ -41,7 +43,7 @@ const H2 = styled.h2`
 margin: 0 0 0 10px;
 `
 
-const Container = styled.div`
+const Base = styled.div`
 	text-align: left;
 	margin: auto;
 	padding-top: 25px;

@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import {Container} from '../Utils/global.css'
+
 import Html from '../Assets/html5-(1).png'
 import redux from '../Assets/redux.png'
 import reatcs from '../Assets/react-jsx.png'
@@ -12,7 +14,7 @@ import javascript from '../Assets/javascript-(1).png'
 
 const Skills = () => {
   return (
-		<Wrapper>
+		<SkillsWrapper>
 			<Corner>
 				<H2>Skills</H2>
 			</Corner>
@@ -73,13 +75,12 @@ const Skills = () => {
 					</Columns>
 				</Content>
 			</Card>
-		</Wrapper>
+		</SkillsWrapper>
   )
 }
 
-const Wrapper = styled.div`
+const SkillsWrapper = styled(Container)`
 	border-top: lightgray 2px solid;
-
 `
 
 const Corner = styled.div`
@@ -93,7 +94,7 @@ margin: 0 0 0 10px;
 `
 
 const Card = styled.div`
-	max-width: 50%;
+	max-width: 60%;
 	margin: 30px auto 30px;
 	border-radius: 2px;
 	box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);

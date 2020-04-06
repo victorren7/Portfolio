@@ -1,23 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+
 import cropped from '../Assets/cropped.jpg'
+import {screenSize} from '../Utils/screenSize'
+import {Container} from '../Utils/global.css'
 
 const Home = () => {
 	return (
-		<Container>
+		<HomeContainer>
 			<Title>Victor Renderos</Title>
 			<Content> Frontend Javascript</Content>
 			<Image src={cropped} alt='self-potrait' />
 
-		</Container>
+		</HomeContainer>
 	)
 }
 
-const Container = styled.div`
+const HomeContainer = styled(Container)`
 	margin: auto;
 	background: #282c34;
 	height: 500px;
 	text-align: center;
+ 
 `
 const Title = styled.h1`
 	padding-top: 25px;
