@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import {screenSize} from './screenSize'
 
 export const Container = styled.div`

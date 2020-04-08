@@ -30,10 +30,10 @@ const Contact = () => {
 						Social Media
 					</Paragraph>
 					<Grid>
-						<a href='https://www.linkedin.com/in/victorrenderos/' target='_blank'>
+						<a href='https://www.linkedin.com/in/victorrenderos/' target='_blank' rel="noopener noreferrer">
 							<Image src={linkedin} alt='linkdin' />
 						</a>
-						<a href='https://github.com/victorren7' target='_blank'>
+						<a href='https://github.com/victorren7' target='_blank' rel="noopener noreferrer">
 							<Image src={github} alt='github' />
 						</a>
 					</Grid>

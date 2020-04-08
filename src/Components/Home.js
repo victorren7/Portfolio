@@ -2,7 +2,6 @@ import React from 'react'
 import styled from 'styled-components'
 
 import cropped from '../Assets/cropped.jpg'
-import {screenSize} from '../Utils/screenSize'
 import {Container} from '../Utils/global.css'
 
 const Home = () => {
