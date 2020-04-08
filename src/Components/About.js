@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {Container} from '../Utils/global.css'
+import { screenSize } from '../Utils/screenSize';
 
 const About = () => {
   return (
@@ -30,7 +31,11 @@ const About = () => {
 };
 
 const Wrapper = styled(Container)`
-  height: 400px;
+	height: 400px;
+	@media ${screenSize.underSmallPhone} {
+		padding-bottom: 60px;
+
+	}
 `
 
 const Corner = styled.div`
@@ -47,7 +52,7 @@ const Base = styled.div`
 	text-align: left;
 	margin: auto;
 	padding-top: 25px;
-	width: 650px;
+	width: 65%;
 `
 
 const Paragraph = styled.p`

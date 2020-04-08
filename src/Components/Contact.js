@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 import {Container} from '../Utils/global.css'
+import {screenSize} from '../Utils/screenSize'
 
 import linkedin from '../Assets/linkedIn(1).png'
 import github from '../Assets/github.png'
@@ -62,9 +63,12 @@ const Base = styled.div`
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: center;
-	grid-gap: 170px;
+	grid-gap: 14%;
 	text-align: center;
 	margin-top:40px;
+  @media ${screenSize.tablet} { 
+		grid-gap: 30%;
+	}
 `
 
 const Row = styled.div`

@@ -20,8 +20,7 @@ const HomeContainer = styled(Container)`
 	background: #282c34;
 	height: 500px;
 	text-align: center;
- 
-`
+	`
 const Title = styled.h1`
 	padding-top: 25px;
 	color: cadetBlue

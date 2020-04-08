@@ -11,6 +11,7 @@ import sass from '../Assets/sass.png'
 import styledComponents from '../Assets/styled-components.png'
 import bootstrap from '../Assets/bootstrap.png'
 import javascript from '../Assets/javascript-(1).png'
+import { screenSize } from '../Utils/screenSize';
 
 const Skills = () => {
   return (
@@ -110,6 +111,9 @@ const H4 = styled.h4`
 `
 
 const Columns = styled.div`
+	@media ${screenSize.underSmallPhone} {
+		display: flex;
+	}
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: left;
