@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 import {Container} from '../Utils/global.css'
 import {screenSize} from '../Utils/screenSize'
+import Corner from '../Utils/Corner'
 
 import linkedin from '../Assets/linkedIn(1).png'
 import github from '../Assets/github.png'
@@ -10,9 +11,7 @@ import github from '../Assets/github.png'
 const Contact = () => {
 	return (
 		<Wrapper>
-			<Corner>
-			<H2>Contact</H2>
-			</Corner>
+			<Corner title={'Contact'}/>
 			<Base>
 				<Row>
 					<Paragraph bold>Location</Paragraph>
@@ -47,17 +46,7 @@ const Contact = () => {
 const Wrapper = styled(Container)`
   height: 220px;
 	background-color: #F0F0F0;
-`
-
-const Corner = styled.div`
-	width: 200px;
-	height: 40px;
-	background-color: aquamarine;
-`
-
-const H2 = styled.h2`
-	margin: 0 0 0 10px;
-`
+`;
 
 const Base = styled.div`
 	display: grid;
@@ -69,34 +58,34 @@ const Base = styled.div`
   @media ${screenSize.tablet} { 
 		grid-gap: 30%;
 	}
-`
+`;
 
 const Row = styled.div`
 	display: grid;
 	grid-auto-flow: row;
 	grid-gap: ${props => props.gridGap ? '7px' : 0};
 	text-align: left;
-`
+`;
 
 const Grid = styled.div`
 	display: grid;
 	grid-auto-flow: column;
 	justify-content: center;
 	grid-gap: 20px;
-`
+`;
 
 const Paragraph = styled.p`
 	margin: 0;
 	font-weight: ${props => props.bold ? 600 : 400}
-`
+`;
 
 const Email = styled.a`
 	color: lightslategrey;
 	text-decoration: none;
-` 
+`;
 
 const Image = styled.img`
 	width: 30px;
-`
+`;
 
 export default Contact;

@@ -1,15 +1,14 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-import {Container} from '../Utils/global.css'
+import { Container } from '../Utils/global.css';
 import { screenSize } from '../Utils/screenSize';
+import Corner from '../Utils/Corner'
 
 const About = () => {
   return (
 		<Wrapper>
-			<Corner>
-				<H2>Hello!</H2>
-			</Corner>
+			<Corner title={'Hello'}/>
 			<Base>
 				<Paragraph>
 					Hello! My name is Victor Renderos. 
@@ -23,8 +22,6 @@ const About = () => {
 				<Paragraph> 
 					I am Javascript frontend engineer. I specialize in React and have experience in Redux and styled-components.
 				</Paragraph>
-				
-				
 			</Base>
 		</Wrapper>
 	)
@@ -34,29 +31,18 @@ const Wrapper = styled(Container)`
 	height: 400px;
 	@media ${screenSize.underSmallPhone} {
 		padding-bottom: 60px;
-
 	}
-`
-
-const Corner = styled.div`
-	width: 200px;
-	height: 40px;
-	background-color: aquamarine;
-`
-
-const H2 = styled.h2`
-margin: 0 0 0 10px;
-`
+`;
 
 const Base = styled.div`
 	text-align: left;
 	margin: auto;
 	padding-top: 25px;
 	width: 65%;
-`
+`;
 
 const Paragraph = styled.p`
 	font-size: 18px;
-`
+`;
 
 export default About;
